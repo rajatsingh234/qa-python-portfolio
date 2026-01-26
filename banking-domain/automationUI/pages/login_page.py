@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from automationUI.config.config import BASE_URL
 
 class LoginPage:
     def __init__(self, driver):
@@ -12,7 +13,7 @@ class LoginPage:
 
     #Actions
     def open(self):
-        self.driver.get("https://parabank.parasoft.com/parabank/index.htm")
+        self.driver.get(BASE_URL)
 
     def login(self, username, password):
         self.driver.find_element(*self.USERNAME_INPUT).send_keys(username)

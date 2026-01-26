@@ -93,6 +93,18 @@ pip install -r requirements.txt
 
 ```bash
 pytest -v
+pytest tests/test_login.py -v
+pytest tests/test_fund_transfer.py::test_fund_transfer -v
+pytest -k login -v
+```
+
+---
+
+## 📊 HTML Reporting
+
+```bash
+pip install pytest-html
+pytest -v --html=reports/report.html --self-contained-html
 ```
 
 ---
@@ -103,12 +115,6 @@ pytest -v
 pytest -v --alluredir=reports/allure-results
 allure serve reports/allure-results
 ```
-
----
-
-## 🧠 Interview Explanation
-
-> “I automated core banking flows using Selenium, Pytest, and Page Object Model with proper synchronization and Allure reporting.”
 
 ---
 
