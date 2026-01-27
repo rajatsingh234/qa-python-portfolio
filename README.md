@@ -30,5 +30,10 @@ This portfolio demonstrates how I approach testing in real-world domains.
 - REST API testing (planned)
 - Git & GitHub
 
+## Purpose
+I built an end-to-end banking automation project covering both UI and API layers.
+For UI, I used Selenium with Pytest and Page Object Model to automate login, account overview, fund transfer, and logout, with proper synchronization and Allure reporting.
+For API automation, I validated backend business logic using Python requests, handling session-based authentication, dynamically fetching customer and account IDs, and validating fund transfer operations.
+
 ## 📌 Note
 All applications used are mock/demo systems created for portfolio purposes.

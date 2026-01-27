@@ -51,7 +51,7 @@ https://parabank.parasoft.com/parabank/index.htm
 ## 🏗 Project Structure
 
 ```
-automation/banking/
+banking-domain/automationUI/
 ├── pages/
 ├── tests/
 ├── utils/
