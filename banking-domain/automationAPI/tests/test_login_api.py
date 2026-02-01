@@ -11,6 +11,7 @@ def test_login_api():
 
     #validate response
     assert response.status_code == 200
+    print(response.json())
 
     # Validate session is created
     assert "JSESSIONID" in response.cookies
